@@ -21,6 +21,7 @@ else {
 	$result = mysqli_query($con, "SELECT " . $columnString . " FROM Persons");
 	
 	//Create table for data display
+	echo "<div id='content'>";
 	echo "<table border='1'>
 	<tr>";
 	for($i=0; $i < $N; $i++) {
@@ -35,7 +36,7 @@ else {
 			echo "<td>" . $row[$columns[$i]] . "</td>";
 		}
 		echo "</tr>";
-		
+		echo "</div>";
 	}
 }
 }

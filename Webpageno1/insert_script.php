@@ -9,20 +9,18 @@
 
 <body>
 
-<div class=left>
-</div>
-
-<div class=top>
+<div class=header>
 <h1  id=head1>Web Page No. 1</h1>
-</div>
-
-<div class=right>
 </div>
 
 <div id=menu>
 <?php include 'menu.php'; ?>
 </div>
 
+<div class=left>
+</div>
+
+<div class=right>
 <h2 id=section>Data Insertion</h2>
 
 <?php
@@ -51,5 +49,7 @@ window.onload = function(){
 	}, 2000);
 }
 </script>
+</div>
+<div id='footer'><?php include 'date.php';?></div>
 </body>
 </html>
